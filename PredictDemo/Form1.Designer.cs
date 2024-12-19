@@ -50,9 +50,11 @@
             this.label_ano_ok = new System.Windows.Forms.Label();
             this.label_ano_ng = new System.Windows.Forms.Label();
             this.label_predict_result = new System.Windows.Forms.Label();
+            this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_document_inference_input)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_document_inference_output)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_camera_output)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // button_select_filepath
@@ -272,11 +274,22 @@
             this.label_predict_result.Text = "result";
             this.label_predict_result.Visible = false;
             // 
+            // pictureBox_logo
+            // 
+            this.pictureBox_logo.Image = global::PredictDemo.Properties.Resources.AIOT_logo1;
+            this.pictureBox_logo.Location = new System.Drawing.Point(1620, 21);
+            this.pictureBox_logo.Name = "pictureBox_logo";
+            this.pictureBox_logo.Size = new System.Drawing.Size(204, 86);
+            this.pictureBox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_logo.TabIndex = 21;
+            this.pictureBox_logo.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1866, 1130);
+            this.Controls.Add(this.pictureBox_logo);
             this.Controls.Add(this.label_predict_result);
             this.Controls.Add(this.label_ano_ng);
             this.Controls.Add(this.label_ano_ok);
@@ -303,6 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_document_inference_input)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_document_inference_output)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_camera_output)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,6 +345,7 @@
         private System.Windows.Forms.Label label_ano_ok;
         private System.Windows.Forms.Label label_ano_ng;
         private System.Windows.Forms.Label label_predict_result;
+        private System.Windows.Forms.PictureBox pictureBox_logo;
     }
 }
 
